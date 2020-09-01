@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monkey Business</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="login-area">
+			<h1 class="text-center">Welcome to Monkey Business</h1>
+			<div class="submit-form">
+				<h4>Login</h4>
+				<br>
+				<input placeholder="Enter Your E-mail Here" class="form-control" type="email" name="" id="">
+				<br>
+				<input placeholder="Enter Your Password" class="form-control" type="password" name="" id="">
+				<br>
+				<button id="login" class="btn btn-success">Login</button>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="container">
+		<div id="transaction-area">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="status deposit">
+						<h5>Deposit</h5>
+						<h2>$ <span id="currentDeposit">00</span> </h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="status withdraw">
+						<h5>Withdraw</h5>
+						<h2>$ 25</h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="status balance">
+						<h5>Balance</h5>
+						<h2>$ <span id="currentBalance"> 1240</span></h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="submit-form">
+						<h4>Deposit</h4>
+						<input  id="depositAmount" class="form-control" type="text" name="" id="deposit">
+						<br>
+						<button id="addDeposit" class="btn btn-success">Deposit</button>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="submit-form">
+						<h4>Withdraw</h4>
+						<input class="form-control" type="text" name="" id="">
+						<br>
+						<button class="btn btn-success">
+							Withdraw
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+
+
+
+		<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
