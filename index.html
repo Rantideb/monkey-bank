@@ -7,7 +7,8 @@
 	<title>Monkey Business</title>
 
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
 				<div class="col-md-4">
 					<div class="status withdraw">
 						<h5>Withdraw</h5>
-						<h2>$ 25</h2>
+						<h2>$ <span id="currentWithdraw"> 00</span></h2>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -56,7 +57,7 @@
 				<div class="col-md-6">
 					<div class="submit-form">
 						<h4>Deposit</h4>
-						<input  id="depositAmount" class="form-control" type="text" name="" id="deposit">
+						<input id="depositAmount" class="form-control" type="text" name="" id="deposit">
 						<br>
 						<button id="addDeposit" class="btn btn-success">Deposit</button>
 					</div>
@@ -65,10 +66,9 @@
 				<div class="col-md-6">
 					<div class="submit-form">
 						<h4>Withdraw</h4>
-						<input class="form-control" type="text" name="" id="">
+						<input id="withdrawAmount" class="form-control" type="text" name="" id="">
 						<br>
-						<button class="btn btn-success">
-							Withdraw
+						<button id="addWithdraw" class="btn btn-success">Withdraw
 						</button>
 					</div>
 				</div>
